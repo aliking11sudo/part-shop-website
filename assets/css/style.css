@@ -8,6 +8,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  font-size: 62.5%;
+}
+@media screen and (min-width: 550px) {
+  html{
+    font-size: 100%;
+  }
+}
 .saleprice{
     font-size: 1.4rem;
     color: #fff;
