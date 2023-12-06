@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/bootstrap-5.1.3-dist/css/bootstrap.min.css"
+    />
+    <script
+      src="../assets/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script src="../assets/scripts/logIn.js" defer></script>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/logIn.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container-fluid w-100 sticky-top">
+      <div class="row w-100">
+        <div class="col-lg-12 col-sm-12 col-md-12">
+          <nav
+            class="navbar navbar-expand-lg bg-ali sticky-top border-body"
+            data-bs-theme="dark"
+          >
+            <div class="container-fluid sticky-top">
+              <div class="col-lg-12 col-sm-6">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active text-black"
+                        aria-current="page"
+                        href="../index.html"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link btn-primary rounded text-black"
+                        href="./log-in html/log-in.html"
+                        >Log in</a
+                      >
+                    </li>
+                  </ul>
+                  <form class="d-flex col-6 " role="search">
+                    <div class="">
+                      <img
+                        class="col-1  float-end"
+                        src="../assets/images/essportco-high-resolution-logo-white-transparent.png"
+                        alt=""
+                      />
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid row justify-content-center mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-12 col-sm-12 col-lg-4">
+          <div class="ctn">
+            <div class="glitch-wrapper">
+              <div class="glitch" data-text="Log in here">Log in here</div>
+            </div>
+            <div class="ctn__body">
+              <label for="username" class="text-input"
+                ><li class="fa fa-user"></li>
+                Username :</label
+              >
+              <input
+                type="text"
+                placeholder="Email or Phone"
+                class="email"
+                id="myEmail"
+              />
+              <p class="tex-email" id="tex-email"></p>
+              <label for="password" class="text-input"
+                ><li class="fa fa-lock"></li>
+                Password :</label
+              >
+              <input type="password" class="password" id="password-field" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="showPass"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-eye showPass"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"
+                />
+                <path
+                  d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"
+                />
+              </svg>
+              <div>
+                <p class="tex-email" id="tex-pass">
+                  *-*-The Password or Email is invalid <br />if you do not have
+                  a account you
+                  <a
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    can creat the new account here</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="btn--submit">
+              <a href="#" id="btn" class="btnSub btnSub--white btnSub--animated"
+                >Submit</a
+              >
+              <p id="demo"></p>
+            </div>
+            <div class="social">
+              <div class="go"><a href="#" class="fa fa-google"></a> Google</div>
+              <div class="fb">
+                <a href="#" class="fa fa-facebook"></a> Facebook
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="ctn__body">
+                  <label for="username" class="text-input"
+                    ><li class="fa fa-user"></li>
+                    Username :</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="Email or Phone"
+                    class="email"
+                    id="myEmail"
+                  />
+                  <p class="tex-email" id="tex-email"></p>
+                  <label for="password" class="text-input"
+                    ><li class="fa fa-lock"></li>
+                    Password :</label
+                  >
+                  <input type="password" class="password" id="password-field" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    id="showPass"
+                    width="25"
+                    height="25"
+                    fill="currentColor"
+                    class="bi bi-eye showPass"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"
+                    />
+                    <path
+                      d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"
+                    />
+                  </svg>
+                  <div>
+                    <p class="tex-email" id="tex-pass">
+                      *-*-The Password or Email is invalid <br />if you do not
+                      have a account you
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                      >
+                        can creat the new account here</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="btn--submit">
+                  <a
+                    href="#"
+                    id="btn"
+                    class="btnSub btnSub--white btnSub--animated"
+                    >Submit</a
+                  >
+                  <p id="demo"></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div id="message">
+            <h3>Password must contain the following:</h3>
+            <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+            <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+            <p id="number" class="invalid">A <b>number</b></p>
+            <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+          </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
