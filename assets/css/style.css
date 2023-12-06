@@ -1,0 +1,186 @@
+*,
+*::after,
+*::before {
+  list-style: none;
+  text-decoration-line: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.saleprice{
+    font-size: 1.4rem;
+    color: #fff;
+}
+.text-cart {
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: .5rem;
+}
+.forsale{
+    font-size: 1.1rem;
+    color: green;
+}
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-image: linear-gradient(to left bottom, #000, #3e3e3e);
+}
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.circle li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.24);
+  bottom: -85vh;
+  animation: animate 25s linear infinite;
+}
+.circle :nth-child(1) {
+  left: 25%;
+  height: 80px;
+  height: 80px;
+}
+.circle :nth-child(2) {
+  left: 10%;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+.circle :nth-child(3) {
+  left: 70%;
+  animation-delay: 4s;
+}
+.jz-card {
+  color: rgb(0, 0, 97);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  text-decoration: line-through;
+}
+.jz-price {
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: none !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+.circle :nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+.circle :nth-child(5) {
+  left: 65%;
+}
+.alistil {
+  background: linear-gradient(to top, rgb(146, 144, 146), rgb(45, 45, 53));
+}
+.alihover {
+  opacity: 0.8;
+}
+.alihover:hover {
+  opacity: 1;
+}
+.circle :nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+.circle :nth-child(7) {
+  left: 35%;
+  width: 150;
+  height: 150;
+  animation-delay: 7s;
+}
+.circle :nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 0s;
+  animation-duration: 40s;
+}
+.circle :nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 30s;
+}
+.circle :nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-duration: 11s;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+.bg-ali {
+  background-color: rgb(25, 11, 107);
+}
+
+.text-ali {
+  color: rgb(7, 9, 150);
+}
+
+.mr-ali {
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.mt-ali {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.mr-ali:hover .ms-ali {
+  opacity: 1;
+}
+.mr-ali:hover .mt-ali {
+  opacity: 1;
+}
+
+.ms-ali-text {
+  margin-left: 40%;
+}
+
+.ms-ali {
+  opacity: 0.6;
+  transition: 0.5s ease;
+}
+
+.me-ali {
+  margin-right: 10%;
+}
+.ali-scale {
+  transition: 0.5s ease;
+}
+.ali-scale:hover {
+  transform: scale(1.05);
+}
+.rounded-ali {
+  border-radius: 15%;
+}
